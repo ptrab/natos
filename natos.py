@@ -78,8 +78,8 @@ def getOccupancies(blockstart, blockend, indices, lines):
 if __name__ == "__main__":
     LINES = getContent(sys.argv[1])
     START, END, INDICES = getIndices(LINES)
-    ALPHA = getOccupancies(START[0], END[0], INDICES, LINES)
-    BETA = getOccupancies(START[1], END[1], INDICES, LINES)
+    ALPHA = getOccupancies(START[-2], END[-2], INDICES, LINES)
+    BETA = getOccupancies(START[-1], END[-1], INDICES, LINES)
 
     print(ALPHA)
     print(BETA)
